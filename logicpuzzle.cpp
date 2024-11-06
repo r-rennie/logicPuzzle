@@ -21,6 +21,7 @@ int main() {
 
 
     for (int i = 0; i < 4; i++) {
+        cout << "Enter the information for Boy #" << (i + 1) << ": " << endl;
         cout << "Name: ";
         cin >> boys[i].name;
 
