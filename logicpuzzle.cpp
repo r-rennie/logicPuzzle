@@ -19,34 +19,32 @@ int main() {
     bool complete = false;
     string name;
 
-    cout << "Hello! What's your name?" << endl;
-    cin >> name;
-    cout << "Hello, " + name << endl;
-    // for (int i = 0; i < 4; i++) {
-    //     cout << "Name: ";
-    //     cin >> boys[i].name;
 
-    //     cout << "Age: ";
-    //     cin >> boys[i].age;
+    for (int i = 0; i < 4; i++) {
+        cout << "Name: ";
+        cin >> boys[i].name;
 
-    //     cout << "Shirt Color: ";
-    //     cin >> boys[i].shirtColor;
+        cout << "Age: ";
+        cin >> boys[i].age;
 
-    //     cout << "Favorite Movie Genre: ";
-    //     cin >> boys[i].movieGenre;
+        cout << "Shirt Color: ";
+        cin >> boys[i].shirtColor;
 
-    //     cout << "Favorite Snack: ";
-    //     cin >> boys[i].snack;
+        cout << "Favorite Movie Genre: ";
+        cin >> boys[i].movieGenre;
 
-    //     cout << endl;
-    // }
+        cout << "Favorite Snack: ";
+        cin >> boys[i].snack;
+
+        cout << endl;
+    }
     
-    // if (checkConstraints(boys)) {
-    //     cout << "Valid solution. Congratulations!" << endl;
-    //     complete = true;
-    // } else {
-    //     cout << "Incorrect. Try again!" << endl;
-    // }
+    if (checkConstraints(boys)) {
+        cout << "Valid solution. Congratulations!" << endl;
+        complete = true;
+    } else {
+        cout << "Incorrect. Try again!" << endl;
+    }
 
 
     return 0;
