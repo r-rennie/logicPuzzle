@@ -18,35 +18,48 @@ int main() {
     vector<Boy> boys(4);
     bool complete = false;
     string name;
-
-
-    for (int i = 0; i < 4; i++) {
-        cout << "Enter the information for Boy #" << (i + 1) << ": " << endl;
-        cout << "Name: ";
-        cin >> boys[i].name;
-
-        cout << "Age: ";
-        cin >> boys[i].age;
-
-        cout << "Shirt Color: ";
-        cin >> boys[i].shirtColor;
-
-        cout << "Favorite Movie Genre: ";
-        cin >> boys[i].movieGenre;
-
-        cout << "Favorite Snack: ";
-        cin >> boys[i].snack;
-
-        cout << endl;
-    }
     
-    if (checkConstraints(boys)) {
-        cout << "Valid solution. Congratulations!" << endl;
-        complete = true;
-    } else {
-        cout << "Incorrect. Try again!" << endl;
-    }
+    cout << "Welcome to the Logic Puzzle! Use the following prompts to decide which characteristics of each person align." << endl;
+    cout << "1. Joshua is at one of the ends." << endl;
+    cout << "2. The boy wearing the Black shirt is somewhere to the left of the youngest boy." << endl;
+    cout << "3. Joshua likes Horror movies." << endl;
+    cout << "4. The 14-year-old boy is at the third position." << endl;
+    cout << "5. The boy wearing the Red shirt is somewhere between the 13-year old boy and the one who likes action movies, in that order." << endl;
+    cout << "6. Daniel likes Thriller movies." << endl;
+    cout << "7. The boy who is going to eat Cookies is at one of the ends." << endl;
+    cout << "8. The boy wearing the Black shirt is exactly to the left of the one who likes Thriller movies." << endl;
+    cout << "9. The boy who is going to eat Crackers is exactly to the left of the one who likes Thriller movies." << endl;
+    cout << "10. The boy wearing the Red shirt is somewhere between the boy who is going to eat Popcorn and Nicholas, in that order." << endl;
+    cout << "11. At one of the ends is the boy who likes Thriller movies." << endl;
+    cout << "12. Nicholas is somewhere between Joshua and Daniel, in that order." << endl;
+    cout << "13. At the first position is the boy wearing the Green shirt." << endl << endl << endl;
 
+     for (int i = 0; i < 4; i++) {
+            cout << "Boy #" << i + 1 << ": " << endl;
+             cout << "Name: ";
+             cin >> boys[i].name;
+    
+             cout << "Age: ";
+             cin >> boys[i].age;
+    
+             cout << "Shirt Color: ";
+             cin >> boys[i].shirtColor;
+    
+             cout << "Favorite Movie Genre: ";
+             cin >> boys[i].movieGenre;
+    
+             cout << "Favorite Snack: ";
+             cin >> boys[i].snack;
+    
+             cout << endl;
+         }
+        
+         if (checkConstraints(boys)) {
+             cout << "Valid solution. Congratulations!" << endl;
+             complete = true;
+         } else {
+             cout << "Incorrect. Try again!" << endl;
+         }
 
     return 0;
 }
